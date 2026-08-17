@@ -15,7 +15,7 @@ class Solution
         for (int i : nums2) {
             set2.add(i);
         }
-    /*
+
         for (int i : set1) 
         {
             if (set2.contains(i)) {
@@ -26,12 +26,12 @@ class Solution
         /*int[] result = resultSet.stream().mapToInt(Integer::intValue).toArray();
         return result;*/
 
-        
+        /*
         // retainAll()- Keeps only elements in set1 that are ALSO present in set2
         set1.retainAll(set2);   
         return set1.stream().mapToInt(Integer::intValue).toArray();
-    
-        /*
+        */
+
         int[] result = new int[resultSet.size()];
         int i = 0;
         for (int num : resultSet) {
@@ -39,7 +39,6 @@ class Solution
         }
 
         return result;
-        */
     }
 }
 
