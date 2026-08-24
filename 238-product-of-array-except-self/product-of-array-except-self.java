@@ -2,7 +2,7 @@ class Solution
 {
     public int[] productExceptSelf(int[] nums) 
     {
-        // Made this 
+        // Made this array to collect the all right sum 
         int right[] = new int[nums.length];
         int prod1 = 1;
         right[nums.length - 1] = 1;
@@ -12,6 +12,7 @@ class Solution
             right[i] = prod1;
         }  
 
+        // Made this array to collect the all left sum
         int left[] = new int[nums.length];
         int prod2 = 1;
         left[0] = 1;
@@ -21,6 +22,7 @@ class Solution
             left[i] = prod2;
         }
 
+        // The final Array which contains the result
         int result[] = new int[nums.length];
         int index = 0;
         for(int i = 0; i < nums.length; i++)
